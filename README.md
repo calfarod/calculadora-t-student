@@ -26,8 +26,10 @@ El proyecto mantiene una estructura simple de archivo único para facilitar su a
 
 ```text
 calculadora-t-student/
-├── index.html     # Aplicación web completa (HTML, CSS y JS integrados)
-└── README.md      # Documentación del proyecto
+├── index.html         # Aplicación web completa (HTML, CSS y JS integrados)
+├── img                # Activos visuales
+|    └── formula1.jpg  # Documentación de
+└── README.md          # Documentación del proyecto
 ```
 
 Thank you Lord ❤️

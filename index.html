@@ -209,17 +209,19 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
                         <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
                             <span class="font-bold text-slate-800 text-sm block">Intervalo de Confianza para la Media</span>
-                            <p class="text-slate-600 leading-relaxed">
-                                $$IC = \bar{x} \pm t_{\alpha/2, \, n-1} \cdot \left(\frac{s}{\sqrt{n}}\right)$$
-                            </p>
+                            <!-- Imagen ajustable al contenedor -->
+                             <div class="py-1">
+                                <img src="img/intervalo.jpg" alt="Fórmula Intervalo de Confianza para la Media." class="w-full max-w-full h-auto object-contain rounded-md" />
+                            </div>
                             <p class="text-slate-500 text-[11px] pt-1 border-t border-slate-200">Se usa cuando la desviación estándar poblacional (sigma) es desconocida y se reemplaza por la muestral (s).</p>
                         </div>
 
                         <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
                             <span class="font-bold text-slate-800 text-sm block">Tamaño de Muestra ($n$)</span>
-                            <p class="text-slate-600 leading-relaxed">
-                                $$n = \frac{t_{\alpha/2, \, n-1}^2 \cdot s^2}{E^2}$$
-                            </p>
+                            <!-- Imagen ajustable al contenedor -->
+                             <div class="py-1">
+                                <img src="img/muestra.jpg" alt="Fórmula tamaño de la muestra con sigma desconocida." class="w-auto max-w-[65%] h-auto object-contain rounded-md" />
+                            </div>
                             <p class="text-slate-500 text-[11px] pt-1 border-t border-slate-200">Como t depende de n, se resuelve de forma iterativa iniciando la primera aproximación con Z_alpha/2.</p>
                         </div>
                     </div>
