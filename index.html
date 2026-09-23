@@ -45,7 +45,7 @@
                     </svg>
                 </div>
                 <div>
-                    <h1 class="text-lg font-bold text-slate-800 leading-tight">Distribución $t$ de Student</h1>
+                    <h1 class="text-lg font-bold text-slate-800 leading-tight">Distribución t de Student</h1>
                     <p class="text-xs text-slate-500">Calculadora de Valores Críticos e Intervalos de Confianza</p>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                     <!-- 1. Grados de libertad -->
                     <div>
                         <div class="flex justify-between items-center mb-2">
-                            <label for="dfInput" class="text-sm font-semibold text-slate-700">Grados de Libertad ($\nu$ / df):</label>
+                            <label for="dfInput" class="text-sm font-semibold text-slate-700">Grados de Libertad (df):</label>
                             <div class="flex items-center space-x-1">
                                 <input type="number" id="dfInput" min="1" max="500" value="10" 
                                     class="w-20 text-center font-bold text-blue-600 bg-blue-50 border border-blue-200 rounded-lg py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -107,7 +107,7 @@
                     <!-- 3. Nivel de Confianza -->
                     <div>
                         <div class="flex justify-between items-center mb-2">
-                            <label for="confidenceInput" class="text-sm font-semibold text-slate-700">Nivel de Confianza ($1 - \alpha$):</label>
+                            <label for="confidenceInput" class="text-sm font-semibold text-slate-700">Nivel de Confianza (1 - alpha):</label>
                             <div class="flex items-center space-x-1">
                                 <input type="number" id="confidenceInput" min="50" max="99.9" step="0.1" value="95" 
                                     class="w-20 text-center font-bold text-blue-600 bg-blue-50 border border-blue-200 rounded-lg py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -131,7 +131,7 @@
                     <div class="pt-2 border-t border-slate-100 space-y-3">
                         <label class="flex items-center space-x-2 text-sm text-slate-700 cursor-pointer">
                             <input type="checkbox" id="showZCurve" checked class="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500">
-                            <span>Superponer Distribución Normal Estándar ($Z$)</span>
+                            <span>Superponer Distribución Normal Estándar (Z)</span>
                         </label>
                     </div>
                 </div>
@@ -159,15 +159,15 @@
                             <span class="font-semibold text-slate-200" id="dfSummary">10</span>
                         </div>
                         <div>
-                            <span class="text-slate-400 block">Nivel Nivel de Significancia ($\alpha$):</span>
+                            <span class="text-slate-400 block">Nivel Nivel de Significancia (alpha):</span>
                             <span class="font-semibold text-slate-200" id="alphaSummary">0.05 (5%)</span>
                         </div>
                         <div>
-                            <span class="text-slate-400 block">Área por cola ($\alpha/2$):</span>
+                            <span class="text-slate-400 block">Área por cola (alpha/2):</span>
                             <span class="font-semibold text-slate-200" id="alphaHalfSummary">0.025 (2.5%)</span>
                         </div>
                         <div>
-                            <span class="text-slate-400 block">Equivalente $Z$ Normal:</span>
+                            <span class="text-slate-400 block">Equivalente Z Normal:</span>
                             <span class="font-semibold text-slate-200" id="zEquivalentSummary">±1.9600</span>
                         </div>
                     </div>
@@ -212,7 +212,7 @@
                             <p class="text-slate-600 leading-relaxed">
                                 $$IC = \bar{x} \pm t_{\alpha/2, \, n-1} \cdot \left(\frac{s}{\sqrt{n}}\right)$$
                             </p>
-                            <p class="text-slate-500 text-[11px] pt-1 border-t border-slate-200">Se usa cuando la desviación estándar poblacional ($\sigma$) es desconocida y se reemplaza por la muestral ($s$).</p>
+                            <p class="text-slate-500 text-[11px] pt-1 border-t border-slate-200">Se usa cuando la desviación estándar poblacional (sigma) es desconocida y se reemplaza por la muestral (s).</p>
                         </div>
 
                         <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
@@ -220,7 +220,7 @@
                             <p class="text-slate-600 leading-relaxed">
                                 $$n = \frac{t_{\alpha/2, \, n-1}^2 \cdot s^2}{E^2}$$
                             </p>
-                            <p class="text-slate-500 text-[11px] pt-1 border-t border-slate-200">Como $t$ depende de $n$, se resuelve de forma iterativa iniciando la primera aproximación con $Z_{\alpha/2}$.</p>
+                            <p class="text-slate-500 text-[11px] pt-1 border-t border-slate-200">Como t depende de n, se resuelve de forma iterativa iniciando la primera aproximación con Z_alpha/2.</p>
                         </div>
                     </div>
                 </div>
